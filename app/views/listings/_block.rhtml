@@ -1,0 +1,31 @@
+<!---block partial--->
+
+<!--- put the colors table up first --->
+ <%= render(:partial => "colors", :object => @color_hash) %>
+
+<fieldset>
+    <legend>Block Details</legend>
+    <p>
+        <label class="desc" for="length">Length (inches)</label>
+        <%= form.text_field :length, :size=>15, :class=>'txt'  %>
+    </p>
+    <p>
+        <label class="desc" for="width">Width (inches)</label>
+        <%= form.text_field :width, :size=>15, :class=>'txt' %>
+    </p>
+    <p>
+        <label class="desc" for="number">Number of blocks</label>
+        <%= form.text_field :number, :size=>5, :class=>'txt'  %>
+    </p>
+    <p>
+    <!---need a list of the different block patterns which are links to 
+        a picture of the pattern --->
+        <label class="desc" for="block_patterns">Block pattern</label>
+        <%= @blocks = getBlocks
+            fields_for :blocks do |b|
+                b.collection_select(:id, @blocks, :id, :name_of_pattern, :size=>8)
+            end
+           
+        %>
+    </p>
+</fieldset>

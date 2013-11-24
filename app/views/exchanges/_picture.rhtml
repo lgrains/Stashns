@@ -1,0 +1,11 @@
+<!--- call with :locals => {:dim => 80} -->
+
+<p id="xcg"><% if picture.image_url %>
+            <%= image_tag(picture.image_url, :size => "#{dim}x#{dim}" ) %><br/>
+        <% elsif findImageID(picture) > 0 %>
+            <img src="<%= url_for(:controller => 'listings', :action => 'listing_image', :id => findImageID(picture)) %>",
+                width="<%= dim %>", height="<%= dim %>"  /><br/>
+        <% else %>
+            No image available<br/>
+        <% end %>
+    </p>

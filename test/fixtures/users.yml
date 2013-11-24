@@ -1,0 +1,169 @@
+--- 
+users_004: 
+  salt: c6c93f5b7c08a175896bd05215a13f2a88ae4a89
+  created_on: 2008-01-18 13:40:40
+  city: Broken Arrow
+  address1: 1817 W. Fulton
+  activated_at: 2008-01-18 18:47:08
+  postal_code: "74012"
+  address2: ""
+  crypted_password: c672314fb32de8d60f7429f4b2ccbfba9935f97b
+  updated_on: 2008-01-19 10:36:28
+  activation_code: 
+  remember_token_expires_at: 
+  country: United States
+  password_reset_code: 
+  id: "15"
+  remember_token: 
+  phone: 918-455-3816
+  first_name: Sue
+  num_request_made: 
+  num_requests_filled: 
+  login: lgoogle
+  last_name: Schott
+  state: Oklahoma
+  email: rainyglade@gmail.com
+users_005: 
+  salt: ab7641f8a4153d1fae7ce97a5ec87a4f4e3cb37f
+  created_on: 2008-01-18 13:57:49
+  city: Taylorsville
+  address1: 4939 Gree Tree Way
+  activated_at: 2008-01-18 19:02:10
+  postal_code: "84118"
+  address2: ""
+  crypted_password: 35cbf1abc6e4361c7a6494207bc8c2273306ce43
+  updated_on: 2008-01-19 18:20:58
+  activation_code: 
+  remember_token_expires_at: 
+  country: United States
+  password_reset_code: 
+  id: "16"
+  remember_token: 
+  phone: 801-555-1212
+  first_name: Jan
+  num_request_made: 
+  num_requests_filled: 
+  login: netzero
+  last_name: Brewer
+  state: Utah
+  email: rainyglade@netzero.net
+users_006: 
+  salt: c491924e13593a3c74d9abaa91ae17135ed12bea
+  created_on: 2008-01-18 16:58:21
+  city: 
+  address1: 
+  activated_at: 2008-01-18 21:59:54
+  postal_code: 
+  address2: 
+  crypted_password: 4a646934f2ec2cff24b4c57994d3073ef80f7d92
+  updated_on: 2008-01-18 17:00:24
+  activation_code: 
+  remember_token_expires_at: 
+  country: 
+  password_reset_code: 
+  id: "17"
+  remember_token: 
+  phone: 
+  first_name: 
+  num_request_made: 
+  num_requests_filled: 
+  login: test
+  last_name: 
+  state: 
+  email: test@test.com
+users_007: 
+  salt: a90270d382f2dd07e898ead99609993c004e2def
+  created_on: 2008-01-18 18:03:22
+  city: Cambridge
+  address1: 12 Anywhere St
+  activated_at: 2008-01-18 23:04:10
+  postal_code: 01844
+  address2: ""
+  crypted_password: 98f9f9456e08397f5c73af55a533af17c5e74b7e
+  updated_on: 2008-01-18 18:05:38
+  activation_code: 
+  remember_token_expires_at: 
+  country: United States
+  password_reset_code: 
+  id: "18"
+  remember_token: 
+  phone: 617-555-7878
+  first_name: Louise
+  num_request_made: 
+  num_requests_filled: 
+  login: Louise
+  last_name: Me
+  state: Massachusetts
+  email: louise@quiltmail.com
+users_001: 
+  salt: 5c65445be709d46b25131b9c073b628316df1b61
+  created_on: 2008-01-17 23:07:28
+  city: Broken Arrow
+  address1: 131 W. Fulton
+  activated_at: 2008-01-18 18:34:30
+  postal_code: "74012"
+  address2: ""
+  crypted_password: d21ddc9892ad965e42e4d1d5b89dd359c2414b0b
+  updated_on: 2008-01-19 10:31:20
+  activation_code: 
+  remember_token_expires_at: 
+  country: United States
+  password_reset_code: 
+  id: "12"
+  remember_token: 
+  phone: 918-455-3454
+  first_name: Jane
+  num_request_made: 
+  num_requests_filled: 
+  login: rainyglade
+  last_name: Hiccup
+  state: Oklahoma
+  email: louise_rains@amat.com
+users_002: 
+  salt: 28951354ac7da53234965bc9a3a61a3f3e8deb37
+  created_on: 2008-01-17 23:17:25
+  city: Atlanta
+  address1: 13 Peach Street
+  activated_at: 2008-01-18 04:22:28
+  postal_code: "88888"
+  address2: ""
+  crypted_password: cac896c6800061a1916489a8217e11785c121d28
+  updated_on: 2008-01-19 17:45:22
+  activation_code: 
+  remember_token_expires_at: 
+  country: United States
+  password_reset_code: 
+  id: "13"
+  remember_token: 
+  phone: 446-852-1453
+  first_name: Jonna
+  num_request_made: 
+  num_requests_filled: 
+  login: weezee
+  last_name: Carstairs
+  state: Georgia
+  email: lgrains@fas.harvard.edu
+users_003: 
+  salt: ee86beb85a1fd0c23b920aa4a254850d5739dee1
+  created_on: 2008-01-18 12:01:58
+  city: SLC
+  address1: 2966 East 2920 So
+  activated_at: 2008-01-18 17:02:39
+  postal_code: "84109"
+  address2: ""
+  crypted_password: a992a3c28c68b7a6c3fd585a13bf0a79b3a22f89
+  updated_on: 2008-01-19 18:23:55
+  activation_code: 
+  remember_token_expires_at: 
+  country: United States
+  password_reset_code: 
+  id: "14"
+  remember_token: 
+  phone: 801-484-3316
+  first_name: Louise
+  num_request_made: 
+  num_requests_filled: 
+  login: weezee49
+  last_name: Glade
+  state: Utah
+  email: weezee49@yahoo.com

@@ -1,0 +1,15 @@
+
+
+Dear <%= @owner.first_name %>:
+ 
+Your Stash-n-Share.com exchange with <%= "#{@filler.first_name} #{@filler.last_name} (#{@filler.email} )" %>
+has been completed.  
+
+Fabrics should be mailed to:
+
+<%= render(:partial => "shared/plain_address", :object => @filler) %>
+
+Please log in to Stash-n-Share.com and go to Exchanges to rate this transaction.
+
+Thanks,
+Louise @ Stash-n-Share.com

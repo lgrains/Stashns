@@ -1,0 +1,197 @@
+
+/*css_anthology p. 163 using float property, also padding-right for spacing */
+.desc{
+	text-align: right;
+	float: left;
+	width: 20%;
+	padding-right: 5px;
+}
+
+.important{
+	color: red;
+}
+
+.center{
+	margin-left: 200px;
+	margin-top: 20px;
+}
+
+.txt{
+	background-color: #E0EEE0;
+	margin: 2px;
+}
+
+#user_state, #user_country{
+	background-color: #E0EEE0;
+}
+
+.fieldWithErrors{
+	padding:	2px;
+	background-color:	red;
+	display:	table;
+}
+
+#nav{
+    font-size: .9em
+}
+
+#nav ul{
+    list-style: none;
+    margin: 0;
+    margin-top: 4px;
+    padding: 0;
+    padding-top: 4px;
+}
+
+#nav li{
+    display: inline;
+}
+
+#nav a:link, #nav a:visited{
+    margin-right: 2px;
+    padding: 3px 10px 2px 10px;
+    color: #006400;
+    background-color: #E0EEE0;
+    text-decoration: none;
+    border-top: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+    border-bottom: 2px solid #717171;
+    border-right: 2px solid #717171;
+}
+
+#nav a:hover{
+    border-top: 2px solid #717171;
+    border-left: 2px solid #717171;
+    border-bottom: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
+}
+	
+    
+#xcg {
+    margin: 5px 10px 5px 10px;
+}
+
+.spools {
+    border: 0;
+    width: 20px;
+    height: 20px;
+}
+
+#rating ul,#rating li{
+    list-style-type: none;
+    display: inline;
+    
+}
+
+#rating a:link, #rating a:visited{
+    text-decoration: none;
+}
+
+#rating a:hover{
+    text-decoration: underline;
+    color: red;
+}
+
+#errorExplanation {
+  width: 400px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+#errorExplanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  background-color: #c00;
+  color: #fff;
+  background-image: none;
+}
+
+#errorExplanation p {
+  color: #333;
+  margin-bottom: 0;
+  padding: 5px;
+  text-decoration: none;
+}
+
+#errorExplanation ul, #errorExplanation li {
+  font-size: 12px;
+  list-style: none;
+}
+
+.star-rating{
+	list-style: none;
+	margin: 5px 3px 5px 3px;
+	padding: 5px 5px 5px 3px;
+	width: 80px;
+	height: 20px;
+	position: relative;
+	/*background: url("../images/small_spool.jpg") left bottom repeat-x;*/
+}
+
+/*
+.star-rating li{
+	padding: 0px;
+	margin: 0px;
+	float: left;
+}*/
+
+.star-rating li.current-rating{
+	background: url("../images/small_spool.jpg") left bottom;
+	position: absolute;
+	height: 18px;
+	display: block;
+	text-indent: -9000px;
+	z-index: 1;
+}
+
+#listing_listing_type{
+	width: 85px;
+	text-transform: capitalize;
+}
+
+#maint{
+    font-size: .9em;
+	padding-top: 10px;
+}
+
+#maint ul{
+    list-style: none;
+    margin: 0;
+    margin-top: 4px;
+    padding: 0;
+    padding-top: 4px;
+}
+
+#maint li{
+    display: inline;
+}
+
+#maint a:link, #maint a:visited{
+    margin-right: 2px;
+    padding: 3px 10px 2px 10px;
+    color: #006400;
+    background-color: #E0EEE0;
+    text-decoration: none;
+    border-top: 2px solid #FFFFFF;
+    border-left: 2px solid #FFFFFF;
+    border-bottom: 2px solid #717171;
+    border-right: 2px solid #717171;
+}
+
+#maint a:hover{
+    border-top: 2px solid #717171;
+    border-left: 2px solid #717171;
+    border-bottom: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
+}
+
+.hidden{
+	position: absolute;
+	left: 100em;
+}

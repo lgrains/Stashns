@@ -1,0 +1,16 @@
+
+assn1:
+    listing_id: 1
+    fabric_id: 1
+    
+assn2:
+    listing_id: 2
+    fabric_id: 1
+    
+assn3:
+    listing_id: 4
+    fabric_id: 1
+    
+assn4:
+    listing_id: 5
+    fabric_id: 2

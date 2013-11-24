@@ -1,0 +1,31 @@
+<!---kit partial-->
+
+<fieldset>
+    <legend>Kit Details</legend>
+    <p>
+        <label class="desc" for="finished_length">Length (inches)</label>
+        <%= form.text_field :finished_length, :size=>15,:class=>'txt' %><br/>
+    </p>
+    <p>
+        <label class="desc" for="finished_width">Width (inches)</label>
+        <%= form.text_field :finished_width, :size=>15, :class=>'txt' %><br/>
+    </p>
+    <p>
+        <label class="desc" for="kit_pattern_included">Pattern Included</label> 
+        <%= form.check_box :kit_pattern_included, :class=>'txt' %> <br/>
+    </p>
+    <p>
+        <label class="desc" for="complete">Complete Kit</label> 
+        <%= form.check_box :complete, :class=>'txt' %> <br/>
+    </p>
+    <p>
+        <label class="desc" for="kit_magazine_name">From Magazine</label> 
+        <%= form.text_field :kit_magazine_name, :size=>15, :class=>'txt' %><br/>
+    </p>
+    <p>
+        <label class="desc" for="kit_magazine_issues">Magazine Issue</label>
+         <%= date_select("listing", "kit_magazine_issue", 
+            :use_short_month => true, :start_year => 1995, 
+            :order => [:month, :year], :discard_day => true, :class=>'txt'  ) %>
+    </p>
+</fieldset>

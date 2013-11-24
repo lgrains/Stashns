@@ -1,0 +1,23 @@
+<div id="login-form">
+	<% form_tag do -%>
+	<p><label for="login">Login</label><br/>
+	<%= text_field_tag 'login' , @login %></p>
+
+	<p><label for="password">Password</label><br/>
+	<%= password_field_tag 'password' %></p>
+
+
+	<p><label for="remember_me">Remember me:</label>
+	<%= check_box_tag 'remember_me' %></p>
+
+
+	<p><%= submit_tag 'Log in' %></p>
+	<% end -%>
+	
+
+	<p>New User? <%= link_to 'Create Account', :action => 'signup' %></p>
+	<p>Forgot your password? <%= link_to 'Reset Password', :action => 'forgot_password' -%></p>		
+	
+	
+	
+</div>

@@ -1,0 +1,75 @@
+<!--- view a listing. 
+
+    routing is /listings/view/id
+    this doesn't need to be a form, links will be back and exchange
+--->
+
+
+<h1> <%= h(@listing.type) %> <%= h(@listing.listing_type) %> </h1>
+<% if @listing.type.downcase != "magazine" %>
+    <!---show a picture if there is one  --->
+
+     <p><% if @listing.image_url %>
+            <%= image_tag(@listing.image_url, :size => "200x200") %>
+        <% elsif findImageID(@listing) > 0 %>
+            <img src="<%= url_for(:action => 'listing_image', :id => findImageID(@listing)) %>",
+                width="200", height="200" />
+        <% else %>
+            No image available
+        <% end %>
+ 
+<% end %>  <!-- if not a magazine --->
+
+<p>Description:  <%= h @listing.description %> </p>
+	<% if @listing.listing_type.downcase == 'offer' -%>
+		<p id="xcg">
+		<label for "cost">Cost of exchange: </label>
+		<%= number_to_currency(@listing.cost_of_exchange) %>
+	</p>
+	<% end -%>
+
+<% if @listing.type.downcase != "magazine" %>
+    <p>Colors: 
+    <% for color in @listing.colors %>
+        <%= Color.find(color).name %>
+    <% end %>  <!--- for --></p>
+   
+    <% if @listing.fabric_type %>
+        <p>Fabric type: <%= Fabric.find(@listing.fabric_type).fabric_type %> </p>
+    <% end %>
+    <% if @listing.theme.to_i > 0 %>
+        <p>Theme: <%= Theme.find(@listing.theme).name %> </p>
+    <% end %>
+    
+    <% if @listing.pattern.to_i > 0 %>
+        <p> Pattern: <%= Pattern.find(@listing.pattern).pattern_type %> </p>
+    <% end %>
+    
+<% end %>  <!--- if not a magazine -->
+
+<!--- now do the type-specific stuff -->
+
+<% if @listing.type.downcase == "yardage" %>
+        <%= render :partial => "y_view" %>
+    <% elsif @listing.type.downcase == "block" %>
+        <%= render :partial => "b_view" %>
+    <% elsif @listing.type.downcase == "kit" %>
+        <%= render :partial => "k_view"  %>
+    <% elsif @listing.type.downcase == "magazine" %>
+        <%= render :partial => "m_view"  %>
+    <% else %>
+        <%= render :partial => "qt_view" %>
+    <% end %>
+    
+<!--- last we need links to go back to browsing or to start an exchange-->
+
+<div id="nav">
+    <ul>
+        <li><%= link_to 'Return to Browsing',  :controller => :listings, :action => :browse %></li>
+         <% if @listing.listing_type.downcase == 'request' %>
+            <li><%= link_to 'Fill this Request', :controller => :exchanges, :action => :new, :id => @listing.id %></li>
+         <% else %>
+             <li><%= link_to 'Accept this Offer', :controller => :exchanges, :action => :new, :id => @listing.id %></li>
+         <% end %>
+    </ul>
+</div>

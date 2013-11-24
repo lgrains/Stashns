@@ -1,0 +1,89 @@
+<% user = User.find_by_email("barb.johnson@quiltmail.com") %>
+<% counter = 0 %>
+ 
+yardage_<%= counter += 1 %>:
+  id: <%= counter %>
+  user_id: <%= user.id %>
+  type: Yardage
+  listing_type: request
+  image_url: "/images/user_images/bluestars.jpg"
+  description: "blue on blue stars"
+  fabric_type: 40
+  pattern: 38
+  theme: 25
+  status: new
+  length: 0.5
+  width: 40
+  created_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  updated_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  
+    
+
+yardage_<%= counter += 1 %>:
+  id: <%= counter %>
+  user_id: <%= user.id %>
+  type: Yardage
+  listing_type: offer
+  image_url: "/images/user_images/navystars.jpg"
+  description: "navy background with gold, red and blue stars"
+  fabric_type: 40
+  pattern: 38
+  theme: 25
+  status: new
+  length: 2
+  width: 40
+  created_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  updated_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  
+yardage_<%= counter += 1%>:
+    id: <%= counter %>
+    user_id: 3
+    type: Magazine
+    listing_type: request
+    description: "Looking for the Baby, Baby quilt instructions"
+    status: new
+    magazine_name: "The Quilter Magazine"
+    magazine_month: "Jan"
+    magazine_year: 2008
+    created_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+    updated_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+    
+block_<%= counter += 1 %>:
+    id: <%= counter %>
+    user_id: 4
+    type: Block
+    listing_type: offer
+    description: "appliqued insects on white fabric"
+    image_url: "/images/user_images/bugs.jpg"
+    fabric_type: 40
+    pattern: 33
+    theme: 32
+    status: new
+    length: 10.5
+    width: 10.5
+    number: 6
+    created_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+    updated_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+    
+    
+    
+yardage_<%= counter += 1 %>:
+    id: <%= counter %>
+    user_id: 6
+    type: Yardage
+    listing_type: request
+    description: "flags on a tan background"
+    fabric_type: 40
+    pattern: 38
+    theme: 25
+    image_url: "/images/user_images/flags.jpg"
+    status: new
+    length: 3
+    width: 40
+    treated: true
+    fabric_line_name: "Americana in Miniature"
+    fabric_designer: Judie Rothermel
+    manufacturer: Marcus Brothers Textiles, Inc.
+    created_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+    updated_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+    

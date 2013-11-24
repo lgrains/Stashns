@@ -1,0 +1,25 @@
+<!-- display stuff from find -->
+
+
+
+<% @title = @header_type %>
+
+<%= error_messages_for :image %>
+
+<table>
+	<%= render(:partial => 'header_browse') %>
+	
+	<% if !@listings ||  @listings.size == 0 %>
+		<tr>
+			<td colspan="7"> There are no listings matching your search terms. </td>
+		</tr>
+		<% else %>
+
+			<%= render(:partial => "browse_listing") %>
+	<% end %>
+        
+    
+</table>
+
+ 
+

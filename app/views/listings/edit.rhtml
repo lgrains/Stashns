@@ -1,0 +1,27 @@
+
+
+<% form_for :listing, :url => { :action => :update, :id => @listing.id },
+    :html => {:multipart => true } do |form| %>
+
+     <%= render :partial => "shared/common", :object => @form, :locals => {:form => form} %>
+ 
+  <!--- now every listing has specific fields depending on the type of the listing.
+        Render the partial for the listing type--->
+    <% if @choice.name.downcase == "yardage" %>
+        <%= render :partial => "yardage", :object => @form, :locals => {:form => form} %>
+    <% elsif @choice.name.downcase == "block" %>
+        <%= render :partial => "block", :object => @form, :locals => {:form => form} %>
+    <% elsif @choice.name.downcase == "kit" %>
+        <%= render :partial => "kit", :object => @form, :locals => {:form => form} %>
+    <% elsif @choice.name.downcase == "magazine" %>
+        <%= render :partial => "magazine", :object => @form, :locals => {:form => form} %>
+    <% else %>
+        <%= render :partial => "quilttop", :object => @form, :locals => {:form => form} %>
+    <% end %>
+    
+     <!--- submit button --->
+    <p id="xcg"><%= submit_tag 'Cancel', :class => 'button' %>
+    <%= submit_tag 'Update', :class => 'button' , :id => @listing.id %></p>
+    
+    
+<% end %> 

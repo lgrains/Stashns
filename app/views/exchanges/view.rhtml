@@ -1,0 +1,52 @@
+<!---find me in app\views\exchanges\view.rthml -->
+
+<% @title = "Pending exchange" %>
+
+<p id="xcg">
+    <%= @listing.listing_type.downcase %> from <%= "#{@owner.first_name} #{@owner.last_name}" %><br/>
+    Email address:  <%= mail_to("#{@owner.email}", "#{@owner.email}",
+                    :subject => "Exchange #{@exchange_id}",
+                    :encode => "javascript") %>
+    </p>
+
+     <!--- show a picture -->
+    <%= render(:partial => "picture", :object => @listing,
+        :locals => {:dim => 200} ) %>
+    
+    
+    <p id="xcg">
+        Recipient's address:
+            <%= render(:partial => "shared/address", :object => @recipient) %>
+    </p>
+ 
+    <p id="xcg"><!--- Text area for description --->
+        <label  for="description">Description: </label>
+        <%= h @listing.description %><br/>
+    </p>
+    
+    <% form_for :exchange, :url => { :action => :accept, :id => @exchange.id },
+        :html => {:multipart => true } do |form| %>
+   
+        <p id="xcg">
+			<label for "cost">Cost of exchange: </label>
+			<%= form.text_field :cost, :size => 15, :class=>'txt' %>
+			<label for "funds_xfr">Funds Transfered? </label>
+			<%= form.check_box  "funds_xfr" %>
+		</p>
+            
+        <p id="xcg">
+            <label  for "comments">Comments: </label>
+             <%= h @exchange.comments %>
+             <br/>
+        </p>
+
+    <!--- submit buttons ---> 
+    <% if @owner == @user %>  <!--owner is the only one who can accept -->  
+		<p id="xcg"><%= submit_tag 'Not Yet' %><%= submit_tag 'Accept' %></p>
+	<% else %>
+		<p id="xcg"><%= submit_tag 'Back' %> </p>
+	<% end %>
+    
+    <% end %>  <!--- form -->
+    
+    

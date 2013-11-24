@@ -1,0 +1,40 @@
+--- 
+fabrics_008: 
+  id: "47"
+  fabric_type: wool
+fabrics_010: 
+  id: "49"
+  fabric_type: acrylic
+fabrics_009: 
+  id: "48"
+  fabric_type: acetate
+fabrics_011: 
+  id: "50"
+  fabric_type: nylon
+fabrics_012: 
+  id: "51"
+  fabric_type: minkee
+fabrics_001: 
+  id: "40"
+  fabric_type: cotton
+fabrics_013: 
+  id: "52"
+  fabric_type: unknown
+fabrics_002: 
+  id: "41"
+  fabric_type: flannel
+fabrics_003: 
+  id: "42"
+  fabric_type: polyester
+fabrics_004: 
+  id: "43"
+  fabric_type: rayon
+fabrics_005: 
+  id: "44"
+  fabric_type: blend
+fabrics_006: 
+  id: "45"
+  fabric_type: linen
+fabrics_007: 
+  id: "46"
+  fabric_type: silk

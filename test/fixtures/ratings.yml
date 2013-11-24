@@ -1,0 +1,66 @@
+--- 
+ratings_004: 
+  rating: "4"
+  rateable_type: Exchange
+  rateable_id: "34"
+  id: "4"
+ratings_005: 
+  rating: "3"
+  rateable_type: Exchange
+  rateable_id: "31"
+  id: "5"
+ratings_006: 
+  rating: "3"
+  rateable_type: Exchange
+  rateable_id: "35"
+  id: "6"
+ratings_007: 
+  rating: "5"
+  rateable_type: Exchange
+  rateable_id: "36"
+  id: "7"
+ratings_008: 
+  rating: "5"
+  rateable_type: Exchange
+  rateable_id: "37"
+  id: "8"
+ratings_009: 
+  rating: "4"
+  rateable_type: Exchange
+  rateable_id: "38"
+  id: "9"
+ratings_010: 
+  rating: "5"
+  rateable_type: Exchange
+  rateable_id: "33"
+  id: "10"
+ratings_011: 
+  rating: "5"
+  rateable_type: Exchange
+  rateable_id: "39"
+  id: "11"
+ratings_012: 
+  rating: "5"
+  rateable_type: Exchange
+  rateable_id: "40"
+  id: "12"
+ratings_001: 
+  rating: "5"
+  rateable_type: Exchange
+  rateable_id: "9"
+  id: "1"
+ratings_013: 
+  rating: "5"
+  rateable_type: Exchange
+  rateable_id: "41"
+  id: "13"
+ratings_002: 
+  rating: "4"
+  rateable_type: Exchange
+  rateable_id: "30"
+  id: "2"
+ratings_003: 
+  rating: "5"
+  rateable_type: Exchange
+  rateable_id: "32"
+  id: "3"

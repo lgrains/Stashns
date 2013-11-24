@@ -1,0 +1,23 @@
+<!--- _b_view.rhtml - partial for viewing a block -->
+
+<fieldset>
+    <legend>Block Details</legend>
+    <p>
+        <label class="desc" for="length">Length (inches): </label>
+        <%= h @listing.length %>
+    </p>
+    <p>
+        <label class="desc" for="width">Width (inches): </label>
+        <%= h @listing.width %>
+    </p>
+    <p>
+        <label class="desc" for="number">Number of blocks: </label>
+        <%= h @listing.number %>
+    </p>
+    <p>
+    <!---need a list of the different block patterns which are links to 
+        a picture of the pattern --->
+        <label class="desc" for="block_patterns">Block pattern: </label>
+        <%= h @listing.block_pattern_name %>
+    </p>
+</fieldset>

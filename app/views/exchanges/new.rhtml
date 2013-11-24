@@ -1,0 +1,51 @@
+<!--- view for a new Exchange -->
+
+<% @title = "New exchange" %>
+
+    <p id="xcg">
+    <%= @listing.listing_type.downcase %> from <%= "#{@owner.first_name} #{@owner.last_name}" %><br/>
+    </p>
+    
+     <p><% if @listing.image_url %>
+            <%= image_tag(@listing.image_url, :size => "200x200") %><br/>
+        <% elsif findImageID(@listing) > 0 %>
+            <img src="<%= url_for(:controller => 'listings', :action => 'listing_image', :id => findImageID(@listing)) %>",
+                width="200", height="200" /><br/>
+        <% else %>
+            No image available<br/>
+        <% end %>
+      </p>
+        
+     <p><!--- Text area for description --->
+        <label  for="description">Description: </label>
+        <%= h @listing.description %><br/>
+    </p>
+	
+	<p> <label fo "cost">Cost of Exchange: </label>
+		<%= number_to_currency(@listing.cost_of_exchange) %>
+	</p>
+    
+     <fieldset>
+        <legend><h1>Exchange Details</h1></legend>
+   
+ 
+        <%if @listing.listing_type.downcase.eql?('request') %>
+			<%=  render(:partial => "shared/address", :object => @owner) %>
+        <% end %> <!--- if 'offer -->
+    <% form_for :exchange, :url => { :action => :create, :id => @listing.id },
+        :html => {:multipart => true } do |form| %>
+	
+    <p id="xcg">
+        <label  for "comments">Comments for <%=h @owner.first_name %>: </label>
+         <%= form.text_area  :comments, :class => 'text large', :style => 'width: 75%; height: 5em', :rows => 5 %>
+         <br/>
+    </p>
+
+   
+    <!--- submit buttons --->
+    
+    <p id="xcg"><%= submit_tag 'Cancel' %><%= submit_tag 'Submit' %></p>
+    
+<% end %>  <!--- form -->
+
+</fieldset> 

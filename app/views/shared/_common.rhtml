@@ -1,0 +1,50 @@
+<%= error_messages_for "listing_image" %>
+
+<!--- every Listing gets some common stuff --->
+
+    <!--- select for request/offer--->
+    <p id="xcg"> <label class="desc" for="listing_type">Request or Offer? </label>
+        <%= form.select :listing_type, %w{request offer}, {:id=>"requestOrOffer"} ,  {:onchange => "hideOrShow()"}%></p>
+    
+    <!--- upload an image for image_url
+        images stored in listing_images file--->
+    
+ 
+    <% if @edit %>
+        <p><label class="desc" >Listing Picture </label> </p>
+         <p><% if @listing.image_url %>
+                <%= image_tag(@listing.image_url, :size => "80x80") %>
+            <% elsif findImageID(@listing) > 0 %>
+                <img src="<%= url_for(:action => 'listing_image', :id => findImageID(@listing)) %>",
+                    width="80", height="80" />
+            <% else %>
+                No image available
+            <% end %>
+       <% end %>  </p>  <!--- if --->
+      
+        <!--- in new only, give chance to upload a different/new picture --->
+ 
+            <p><label class="desc" >Upload a <%= (@edit ? 'new ' : '') %>picture </label> </p>
+            <% fields_for :listing_image do |li| %>
+                 <%= li.file_field :uploaded_picture %> <br/>
+             <%   end %><br/></p>
+   
+   
+    
+    
+    
+    <!--- Text area for description --->
+    <p id="xcg"> <label class="desc" for="description">Description: </label>
+        <%= text_area :listing, :description, :class => 'text large', :style => 'width: 75%; height: 5em', :rows => 5 %>
+    </p> 
+    
+    <!-- need field for cost_of_exchange on offers only.  This shows up on edit only
+		because that't the only place we have a @listing  -->
+     <% if @listing.listing_type && @listing.listing_type.downcase.eql?('offer') %>
+         <p id="xcg"> <label class="desc" for "cost_of_exchange">Cost of Offer</label>
+        <%= form.text_field :cost_of_exchange, :size => 15, :class=>'txt' %></p>
+    <% end %>
+    <div id="cost" class="hidden">
+		<label class="desc" for "cost_of_exchange">Cost of Offer</label>
+        <%= form.text_field :cost_of_exchange, :size => 15, :class=>'txt' %>
+	</div>	<!--- this is a space to put a cost field if user selects offer -->

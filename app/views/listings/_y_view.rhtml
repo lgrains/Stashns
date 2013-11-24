@@ -1,0 +1,38 @@
+<!--- -y_view.rhtml - partial for viewing a yardage -->
+
+<fieldset>
+    <legend>Yardage Details</legend>
+    <p>
+        <label class="desc" for="length">Length (Yards) </label>
+        <%= h @listing.length %><br/>
+    </p>
+    <p>
+        <label class="desc" for="width">Width (Inches)</label>
+        <%= h @listing.width %><br/>
+    </p>
+    <p>
+        <label class="desc" for="cost_per_yard">Cost Per Yard</label>
+        <%= h @listing.cost_per_yard %><br/>
+    </p>
+    <p>
+        <label class="desc" for="treated">Treated</label>
+        <%= (@listing.treated ? "yes" : "no")  %>  <br/>    
+        
+     </p>
+     <p>
+        <label class="desc" for="treatment_method">Treatment Used</label>
+        <%= h @listing.treatment_method %><br/>
+    </p>
+    <p>
+        <label class="desc" for="manufacturer">Manufacturer</label>
+        <%= h @listing.manufacturer %><br/>
+    </p>
+    <p>
+        <label class="desc" for="fabric_line_name">Fabric Line</label>
+        <%= h @listing.fabric_line_name %><br/>
+    </p>
+    <p>
+        <label class="desc" for="fabric_designer">Fabric Designer</label>
+        <%= h @listing.fabric_designer %></br>
+    </p>
+</fieldset>

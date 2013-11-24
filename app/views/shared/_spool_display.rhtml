@@ -1,0 +1,12 @@
+<!--- display number of spools for rating  
+        local variable is num for the number of spools
+        to display
+-->
+
+<% if num %>
+	<ul class="star-rating">
+		<li class='current-rating' style='width: <%= (num * 17).to_i -%>px;', title="<%= number_with_precision(num,1) %>/5 spools">
+			Currently <%= number_with_precision(num, 1) %>/5 spools.
+		</li>
+	</ul>
+<% end %>

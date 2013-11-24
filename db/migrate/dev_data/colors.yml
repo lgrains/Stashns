@@ -1,0 +1,266 @@
+red:
+  color_group: red
+  name: red
+
+crimson:
+  color_group: red
+  name: crimson
+  
+pink:
+    name: pink
+    color_group: red
+    
+brick-red:
+    name: brick-red
+    color_group: red
+    
+rose:
+    name: rose
+    color_group: red
+    
+scarlet:
+    name: scarlet
+    color_group: red
+  
+maroon:
+    name: maroon
+    color_group: red
+    
+misty-rose:
+    name: misty-rose
+    color_group: red
+    
+dusty-rose:
+    name: dusty-rose
+    color_group: red
+    
+light-pink:
+    name: light-pink
+    color_group: red
+    
+hot-pink:
+    name: hot-pink
+    color_group: red
+    
+purple:
+    name: purple
+    color_group: purple
+
+violet:
+    name: violet
+    color_group: purple
+    
+lavendar:
+    name: lavendar
+    color_group: purple
+   
+magenta:
+    name: magenta
+    color_group: purple 
+
+orchid:
+    name: orchid
+    color_group: purple
+    
+thistle:
+    name: thistle
+    color_group: purple
+    
+plum:
+    name: plum
+    color_group: purple
+    
+blue:
+    name: blue
+    color_group: blue
+    
+navy:
+    name: navy
+    color_group: blue
+   
+royal-blue:
+    name: royal-blue
+    color_group: blue
+
+azure:
+    name: azure
+    color_group: blue
+    
+teal: 
+    name: teal
+    color_group: blue
+   
+midnight-blue:
+    name: midnight:blue
+    color_group: blue
+    
+cornflower-blue:
+    name: cornflower-blue
+    color_group: blue
+    
+cyan:
+    name: cyan
+    color_group: blue
+    
+steel-blue:
+    name: steel-blue
+    color_group: blue
+    
+sky-blue:
+    name: sky-blue
+    color_group: blue
+   
+turquoise:
+    name: turquoise
+    color_group: blue
+
+green:                                         
+  name: green                                  
+  color_group: green
+  
+spring-green:              
+  name: spring-green                           
+  color_group: green
+  
+sea-green:                 
+  name: sea-green                              
+  color_group: green
+  
+pale-green:                
+  name: pale-green                             
+  color_group: green
+  
+emerald-green:             
+  name: emerald-green                          
+  color_group: green
+  
+mint:                      
+  name: mint                                   
+  color_group: green
+  
+olive:                     
+  name: olive 
+  color_group: green  
+  
+                                
+yellow:                         
+  name: yellow                  
+  color_group: yellow           
+                                
+light-yellow:                   
+  name: light-yellow            
+  color_group: yellow           
+                                
+gold:                           
+  name: gold                    
+  color_group: yellow           
+                                
+goldenrod:                      
+  name: goldenrod               
+  color_group: yellow           
+                                
+lemon:                          
+  name: lemon                   
+  color_group: yellow           
+                                
+cornsilk:                       
+  name: cornsilk                
+  color_group: yellow  
+
+                              
+orange:                       
+  name: orange                
+  color_group: orange         
+                              
+carrot:                       
+  name: carrot                
+  color_group: orange         
+                              
+peach:                        
+  name: peach                 
+  color_group: orange         
+                              
+melon:                        
+  name: melon                 
+  color_group: orange         
+                              
+salmon:                       
+  name: salmon                
+  color_group: orange         
+                              
+coral:                        
+  name: coral                 
+  color_group: orange  
+
+                        
+black:                  
+  name: black           
+  color_group: black    
+                        
+gray:                   
+  name: gray            
+  color_group: black    
+                        
+slate-gray:             
+  name: slate-gray      
+  color_group: black    
+                        
+silver:                 
+  name: silver          
+  color_group: black    
+                        
+smoke:                  
+  name: smoke           
+  color_group: black    
+                        
+charcoal:               
+  name: charcoal        
+  color_group: black    
+                        
+brown:                  
+  name: brown           
+  color_group: brown    
+                        
+khaki:                  
+  name: khaki           
+  color_group: brown    
+                        
+sienna:                 
+  name: sienna          
+  color_group: brown    
+                        
+burnt-sienna:           
+  name: burnt-sienna    
+  color_group: brown    
+                        
+sepia:                  
+  name: sepia           
+  color_group: brown    
+                     
+neutral:
+  name: neutral              
+  color_group: neutral       
+                             
+ivory:                       
+  name: ivory                
+  color_group: neutral       
+                             
+off-white:                   
+  name: off-white            
+  color_group: neutral       
+                             
+white:                       
+  name: white                
+  color_group: neutral       
+                             
+almond:                      
+  name: almond               
+  color_group: neutral       
+                             
+honey:                       
+  name: honey                
+  color_group: neutral       
+                             
+eggshell:                    
+  name: eggshell             
+  color_group: neutral         

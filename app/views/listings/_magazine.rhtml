@@ -1,0 +1,16 @@
+<!---magazine partial-->
+
+<fieldset>
+    <legend>Magazine Details</legend>
+    <p>
+        <label class="desc" for="magazine_name">Magazine Name</label>
+        <%= form.text_field :magazine_name, :size=>15, :class=>'txt' %>
+    </p>
+    <p>
+        <label class="desc" for="magazine_issue">Magazine Issue</label>
+        <%= date_select("listing", "magazine_issue", 
+            :use_short_month => true, :start_year => 1995, 
+            :order => [:month, :year], :discard_day => true, :class=>'txt'  ) %>
+    </p>
+
+</fieldset>

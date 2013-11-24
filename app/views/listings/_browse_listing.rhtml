@@ -1,0 +1,40 @@
+<% for browse_listing in @listings %> 
+
+
+    
+	<tr>
+        <td>
+        
+            <% if browse_listing.image_url %>
+                <%= image_tag(browse_listing.image_url, :size => "80x80") %>
+            <% elsif findImageID(browse_listing) > 0 %>
+                <img src="<%= url_for(:action => 'listing_image', :id => findImageID(browse_listing)) %>",
+                    width="80", height="80" />
+            <% else %>
+                No image available
+            <% end %>
+        </td>
+		<td ><%= h(browse_listing.description) %></td>
+         <td ><%= h(browse_listing.listing_type) %></td>
+		<td ><%= h(browse_listing.type) %></td>
+		<td>
+			<% if browse_listing.listing_type.downcase.eql?('offer') %>
+				<%= number_to_currency(browse_listing.cost_of_exchange) -%>
+			<% end %>
+			
+		</td>
+		
+        <td>
+			<% if browse_listing.listing_type.downcase.eql?('offer') %>
+				<%= render :partial => "shared/spool_display", 
+						:layout => false, :locals => {:num => getProviderRating(browse_listing.user_id)} %>
+			<% end %>
+		</td>
+    
+        <td >
+            <%= link_to 'View', :action => 'view', :id => browse_listing %> <br/>
+            
+        </td>
+	</tr>
+    <% end %>
+

@@ -1,0 +1,31 @@
+<!--- _k_view.rhtml - partial for viewing a kit -->
+
+<fieldset>
+    <legend>Kit Details</legend>
+    <p>
+        <label class="desc" for="finished_length">Length(inches): </label>
+        <%= h @listing.finished_length %>
+    </p>
+    <p>
+        <label class="desc" for="finished_width">Width (inches): </label>
+        <%= h @listing.finished_width %><br/>
+    </p>
+    <p>
+        <label class="desc" for="kit_pattern_included">Pattern Included? </label> 
+        <%= @listing.kit_pattern_included ? "yes" : "no" %><br/>
+    </p>
+    <p>
+        <label class="desc" for="complete">Complete Kit? </label> 
+        <%= @listing.complete ? "yes" : "no" %><br/>
+    </p>
+    <p>
+        <label class="desc" for="kit_magazine_name">From Magazine: </label> 
+        <%= h @listing.kit_magazine_name %><br/>
+    </p>
+    <% if @listing.kit_magazine_issue %>
+    <p>
+        <label class="desc" for="kit_magazine_issues">Magazine Issue: </label>
+        <%= h @listing.kit_magazine_issue.strftime("%b %Y") %>
+       
+    </p> <% end %>
+</fieldset>

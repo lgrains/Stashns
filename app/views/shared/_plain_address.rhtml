@@ -1,0 +1,7 @@
+
+        <%= h plain_address.first_name -%> <%= h plain_address.last_name -%><br/>
+        <%= h plain_address.address1 -%><br/>
+        <% if plain_address.address2 && plain_address.address2.size > 0 %>
+            <%= h plain_address.address2 -%><br/>
+        <% end %>
+        <%= h plain_address.city -%>, <%= h plain_address.state -%> <%= h plain_address.postal_code -%>

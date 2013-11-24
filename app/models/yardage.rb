@@ -1,0 +1,4 @@
+class Yardage < Listing
+
+	
+end

@@ -1,0 +1,70 @@
+barb:
+  id: 1
+  email: barb.johnson@quiltmail.com
+  password: MySecret#$
+  first_name: Barb
+  last_name: Johnson
+  address1: 11787 History Drive
+  city: South Jordan
+  state: UT
+  country: United States
+  postal_code: 84065
+  created_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  updated_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  
+	
+anna:
+  id: 2
+  email: anna.norberg@quiltmail.com
+  password: skiphopjump
+  first_name: Anna
+  last_name: Norberg
+  address1: 12 Cemetery St.
+  city: Lehi
+  state: UT
+  country: UnitedStates
+  postal_code: 84099
+  created_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  updated_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+	
+merna:
+  id: 3
+  email: merna_glade@quiltmail.com
+  password: sewcrazy
+  first_name: Merna
+  last_name: Glade
+  address1: 2966 Louise Ave.
+  city: Salt Lake City
+  state: UT
+  postal_code: 84109
+  created_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  updated_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  
+zina:
+  id: 4
+  email: zina_larkin@quiltmail.com
+  password: sunfun
+  created_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  updated_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  
+jane:
+  id: 5
+  email: jane_lane@quiltmail.com
+  password: secret2
+  created_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  updated_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+
+rosanna:
+  id: 6
+  email: rosanna_kunz@quiltmail.com
+  created_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  updated_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  
+leah:
+  id: 7
+  email: leah_lugg@quiltmail.com
+  created_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+  updated_on: <%= Time.now.strftime("%Y-%m-%d %H:%M:%S") %>
+	
+	
+	

@@ -1,0 +1,361 @@
+--- 
+colors_038: 
+  name: dusty-rose
+  color_group: red
+  id: "170"
+  value: 
+colors_061: 
+  name: violet
+  color_group: purple
+  id: "193"
+  value: 
+colors_059: 
+  name: cornsilk
+  color_group: yellow
+  id: "191"
+  value: 
+colors_017: 
+  name: burnt-sienna
+  color_group: brown
+  id: "149"
+  value: 
+colors_040: 
+  name: hot-pink
+  color_group: red
+  id: "172"
+  value: 
+colors_020: 
+  name: navy
+  color_group: blue
+  id: "152"
+  value: 
+colors_018: 
+  name: sepia
+  color_group: brown
+  id: "150"
+  value: 
+colors_041: 
+  name: neutral
+  color_group: neutral
+  id: "173"
+  value: 
+colors_039: 
+  name: light-pink
+  color_group: red
+  id: "171"
+  value: 
+colors_062: 
+  name: lavendar
+  color_group: purple
+  id: "194"
+  value: 
+colors_019: 
+  name: blue
+  color_group: blue
+  id: "151"
+  value: 
+colors_042: 
+  name: ivory
+  color_group: neutral
+  id: "174"
+  value: 
+colors_063: 
+  name: magenta
+  color_group: purple
+  id: "195"
+  value: 
+colors_021: 
+  name: royal-blue
+  color_group: blue
+  id: "153"
+  value: 
+colors_064: 
+  name: orchid
+  color_group: purple
+  id: "196"
+  value: 
+colors_001: 
+  name: black
+  color_group: black
+  id: "133"
+  value: 
+colors_022: 
+  name: azure
+  color_group: blue
+  id: "154"
+  value: 
+colors_043: 
+  name: off-white
+  color_group: neutral
+  id: "175"
+  value: 
+colors_002: 
+  name: gray
+  color_group: black
+  id: "134"
+  value: 
+colors_023: 
+  name: teal
+  color_group: blue
+  id: "155"
+  value: 
+colors_044: 
+  name: white
+  color_group: neutral
+  id: "176"
+  value: 
+colors_065: 
+  name: thistle
+  color_group: purple
+  id: "197"
+  value: 
+colors_003: 
+  name: slate-gray
+  color_group: black
+  id: "135"
+  value: 
+colors_024: 
+  name: midnight-blue
+  color_group: blue
+  id: "156"
+  value: 
+colors_045: 
+  name: almond
+  color_group: neutral
+  id: "177"
+  value: 
+colors_066: 
+  name: plum
+  color_group: purple
+  id: "198"
+  value: 
+colors_067: 
+  name: hunter-green
+  color_group: green
+  id: "199"
+  value: 
+colors_004: 
+  name: silver
+  color_group: black
+  id: "136"
+  value: 
+colors_025: 
+  name: cornflower-blue
+  color_group: blue
+  id: "157"
+  value: 
+colors_046: 
+  name: honey
+  color_group: neutral
+  id: "178"
+  value: 
+colors_070: 
+  name: lime-green
+  color_group: green
+  id: "202"
+  value: 
+colors_068: 
+  name: forest-green
+  color_group: green
+  id: "200"
+  value: 
+colors_005: 
+  name: smoke
+  color_group: black
+  id: "137"
+  value: 
+colors_026: 
+  name: cyan
+  color_group: blue
+  id: "158"
+  value: 
+colors_047: 
+  name: eggshell
+  color_group: neutral
+  id: "179"
+  value: 
+colors_071: 
+  name: chartreuse
+  color_group: green
+  id: "203"
+  value: 
+colors_069: 
+  name: dark-green
+  color_group: green
+  id: "201"
+  value: 
+colors_027: 
+  name: steel-blue
+  color_group: blue
+  id: "159"
+  value: 
+colors_050: 
+  name: peach
+  color_group: orange
+  id: "182"
+  value: 
+colors_048: 
+  name: orange
+  color_group: orange
+  id: "180"
+  value: 
+colors_006: 
+  name: charcoal
+  color_group: black
+  id: "138"
+  value: 
+colors_072: 
+  name: aqua
+  color_group: blue
+  id: "204"
+  value: 
+colors_049: 
+  name: carrot
+  color_group: orange
+  id: "181"
+  value: 
+colors_007: 
+  name: green
+  color_group: green
+  id: "139"
+  value: 
+colors_030: 
+  name: red
+  color_group: red
+  id: "162"
+  value: 
+colors_028: 
+  name: sky-blue
+  color_group: blue
+  id: "160"
+  value: 
+colors_051: 
+  name: melon
+  color_group: orange
+  id: "183"
+  value: 
+colors_008: 
+  name: spring-green
+  color_group: green
+  id: "140"
+  value: 
+colors_031: 
+  name: crimson
+  color_group: red
+  id: "163"
+  value: 
+colors_029: 
+  name: turquoise
+  color_group: blue
+  id: "161"
+  value: 
+colors_052: 
+  name: salmon
+  color_group: orange
+  id: "184"
+  value: 
+colors_010: 
+  name: pale-green
+  color_group: green
+  id: "142"
+  value: 
+colors_009: 
+  name: sea-green
+  color_group: green
+  id: "141"
+  value: 
+colors_053: 
+  name: coral
+  color_group: orange
+  id: "185"
+  value: 
+colors_011: 
+  name: emerald-green
+  color_group: green
+  id: "143"
+  value: 
+colors_032: 
+  name: pink
+  color_group: red
+  id: "164"
+  value: 
+colors_012: 
+  name: mint
+  color_group: green
+  id: "144"
+  value: 
+colors_033: 
+  name: brick-red
+  color_group: red
+  id: "165"
+  value: 
+colors_054: 
+  name: yellow
+  color_group: yellow
+  id: "186"
+  value: 
+colors_013: 
+  name: olive
+  color_group: green
+  id: "145"
+  value: 
+colors_034: 
+  name: rose
+  color_group: red
+  id: "166"
+  value: 
+colors_055: 
+  name: light-yellow
+  color_group: yellow
+  id: "187"
+  value: 
+colors_014: 
+  name: brown
+  color_group: brown
+  id: "146"
+  value: 
+colors_035: 
+  name: scarlet
+  color_group: red
+  id: "167"
+  value: 
+colors_056: 
+  name: gold
+  color_group: yellow
+  id: "188"
+  value: 
+colors_015: 
+  name: khaki
+  color_group: brown
+  id: "147"
+  value: 
+colors_036: 
+  name: maroon
+  color_group: red
+  id: "168"
+  value: 
+colors_057: 
+  name: goldenrod
+  color_group: yellow
+  id: "189"
+  value: 
+colors_016: 
+  name: sienna
+  color_group: brown
+  id: "148"
+  value: 
+colors_037: 
+  name: misty-rose
+  color_group: red
+  id: "169"
+  value: 
+colors_060: 
+  name: purple
+  color_group: purple
+  id: "192"
+  value: 
+colors_058: 
+  name: lemon
+  color_group: yellow
+  id: "190"
+  value: 

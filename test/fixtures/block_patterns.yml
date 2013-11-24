@@ -1,0 +1,73 @@
+--- 
+block_patterns_012: 
+  block_url: http://www.quilt.com/Blocks/LogCabin/LogCabin.html
+  id: "30"
+  name_of_pattern: Log Cabin
+block_patterns_001: 
+  block_url: http://www.quilt.com/BlockOfTheMonth/1998/AntiqueTile.html
+  id: "19"
+  name_of_pattern: Antique Tile
+block_patterns_013: 
+  block_url: http://www.quilt.com/Blocks/OhioStar/OhioStarDirections.html
+  id: "31"
+  name_of_pattern: Ohio Star
+block_patterns_002: 
+  block_url: http://www.quilt.ocom/Blocks/BearPaw/BearPaw.html
+  id: "20"
+  name_of_pattern: Bear's Paw
+block_patterns_014: 
+  block_url: http://www.quilt.com/BlockOfTheMonth/1997/PinwheelAskew.html
+  id: "32"
+  name_of_pattern: Pinwheel
+block_patterns_003: 
+  block_url: http://www.quilt.com/Blocks/ChurnDash/ChurhDashDirections.html
+  id: "21"
+  name_of_pattern: Churn Dash
+block_patterns_015: 
+  block_url: http://www.quilterscache.com/P/PussInTheCornerBlock.html
+  id: "33"
+  name_of_pattern: Puss in the Corner
+block_patterns_004: 
+  block_url: http://www.quilterscache.com/C/CornandBeansBlock.html
+  id: "22"
+  name_of_pattern: Corn and Beans
+block_patterns_016: 
+  block_url: http://www.quilt.com/BlockOfTheMonth/1997/SawtoothStar.html
+  id: "34"
+  name_of_pattern: Sawtooth Star
+block_patterns_005: 
+  block_url: http://www.portup.com/~hjbe/quilt/steps.html
+  id: "23"
+  name_of_pattern: Courthouse Steps
+block_patterns_017: 
+  block_url: http://www.quilterscache.com/S/SpoolBlock.html
+  id: "35"
+  name_of_pattern: Spools
+block_patterns_006: 
+  block_url: http://www.quilterscache.com/F/FlyingGeeseBlock.html
+  id: "24"
+  name_of_pattern: Flying Geese
+block_patterns_018: 
+  block_url: http://www.quilterscache.com/T/TurkeyTracksBlock.html
+  id: "36"
+  name_of_pattern: Turkey Tracks
+block_patterns_007: 
+  block_url: http://www.quilt.com/Blocks/CardTrick/CardTrickDirections.html
+  id: "25"
+  name_of_pattern: Card Trick
+block_patterns_008: 
+  block_url: http://www.quilterscache.com/F/FiftyFourFortyorFightBlock.html
+  id: "26"
+  name_of_pattern: Fifty-four Forty
+block_patterns_009: 
+  block_url: http://www.quilt.com/Blocks/JacobsLadder/JacobsLadderDirections.html
+  id: "27"
+  name_of_pattern: Jacob's Ladder
+block_patterns_010: 
+  block_url: http://www.quilterscache.com/K/KaleidoscopeBlock.html
+  id: "28"
+  name_of_pattern: Kaleidoscope
+block_patterns_011: 
+  block_url: http://www.quilterscache.com/K/KansasTroubleBlock.html
+  id: "29"
+  name_of_pattern: Kansas Trouble

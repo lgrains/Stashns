@@ -1,0 +1,23 @@
+<table id="small_table">
+    <tr>
+        <!--- heading for colors table includes the color_groups -->
+        <% @color_hash.each do |key, value| %>
+            <th><%= "#{key}s" %></th>
+        <% end %>
+    </tr>
+    <tr>
+        <% @color_hash.each do |key, value| %>
+            <!---value is an array of Color objects
+                    make check boxes out of them -->
+            <td>
+            <% value.each do |v| %>
+                <% if @edit %>
+                    <%= check_box_tag "colors[]", "#{v.id}", @listing.colors.include?(Color.find(v.id)) %> <%= v.name %> <br/>
+                <% else %>
+                    <%= check_box_tag "colors[]", "#{v.id}" %> <%= v.name %> <br/>
+                <% end %>  <!--- if @edit --->
+            <% end %>  <!---value.each -->
+            </td>
+        <% end %> <!---color_hash.each --->
+    </tr>
+</table>

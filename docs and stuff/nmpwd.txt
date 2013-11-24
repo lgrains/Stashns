@@ -1,0 +1,27 @@
+names and passwords
+
+Username: weezee49
+Password: jane#lane
+email: weezee49@yahoo.com
+
+Username: weezee
+Password: stash
+email: lgrains@fas.harvard.edu
+
+Username: rainyglade
+Password: topsecret
+email: louise_rains@amat.com
+
+Username: lgoogle
+Password: sewcrazy
+email: rainyglade@gmail.com
+
+Username: netzero
+Password: netzero
+email:  rainyglade@netzero.com
+
+
+        <li><%= link_to 'Change Password?', :action => 'reset_password' %> </li>       
+                                                                                
+  http://localhost:3000/account/activate/9107379ecd3691883b98075aace41538d2dcda70		
+ 

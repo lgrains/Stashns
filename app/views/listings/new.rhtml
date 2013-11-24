@@ -1,0 +1,32 @@
+<!--- this is the template which will render a screen to collect info for a new Listing -->
+
+<% @title = "New #{@listing.class}".downcase %>
+<div class="important">
+    <%= error_messages_for :listings %>
+    <%= error_messages_for "listing_images" %>
+</div>
+
+<% form_for :listing, :url => { :action => :create, :id => @choice },
+    :html => {:multipart => true } do |form| %>
+
+    <!--- every Listing gets some common stuff --->
+    <%= render :partial => "shared/common", :object => @form, :locals => {:form => form} %>
+
+     <!--- now every listing has specific fields depending on the type of the listing.
+            Render the partial for the listing type--->
+    <% if @choice == 1 || @choice == "1" %>
+        <%= render :partial => "yardage", :object => @form, :locals => {:form => form} %>
+    <% elsif @choice == 2 || @choice == "2" %>
+        <%= render :partial => "block", :object => @form, :locals => {:form => form} %>
+    <% elsif @choice == 3 || @choice == "3" %>
+        <%= render :partial => "kit", :object => @form, :locals => {:form => form} %>
+    <% elsif @choice == 4 || @choice == "4" %>
+        <%= render :partial => "magazine", :object => @form, :locals => {:form => form} %>
+    <% else %>
+        <%= render :partial => "quilttop", :object => @form, :locals => {:form => form} %>
+    <% end %>
+    
+    <!--- submit buttons --->
+	 <p id="xcg"><%= submit_tag 'Cancel', :class => 'button' %> <%= submit_tag %></p>
+
+<% end %>  <!--- end of form create -->

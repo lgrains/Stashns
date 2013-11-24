@@ -1,0 +1,13 @@
+
+
+<p id="xcg">
+    <fieldset id="xcg"> 
+    <legend>Requester's Address Information </legend>
+        <p id="xcg"><%= h address.first_name -%> <%= h address.last_name -%><br/>
+        <%= h address.address1 -%><br/>
+        <% if address.address2 && address.address2.size > 0 %>
+            <%= h address.address2 -%><br/>
+        <% end %>
+        <%= h address.city -%>, <%= h address.state -%> <%= h address.postal_code -%></p>
+    </fieldset>
+</p>

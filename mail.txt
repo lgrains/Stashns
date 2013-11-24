@@ -1,0 +1,7 @@
+config/environment.rb:EMAIL_SMTP_HOST = 'smtp.gmail.com';
+config/environment.rb:EMAIL_IMAP_HOST = 'imap.gmail.com';
+config/environment.rb:EMAIL_FROM      = 'rainyglade@gmail.com';
+config/environment.rb:#     http://www.stephenchu.com/2006/06/how-to-use-gmail-smtp-server-to-send.html
+docs and stuff/nmpwd.txt:email: rainyglade@gmail.com
+test/fixtures/users.yml:  email: rainyglade@gmail.com
+vendor/plugins/trunk/README:   bansalakhil30.10@gmail.com

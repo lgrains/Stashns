@@ -1,0 +1,89 @@
+<!---yardage partial -->
+
+<!--- need selects for colors, fabric types, patterns and themes -->
+    <%= render(:partial => "colors", :object => @color_hash) %>
+
+
+<center>
+<table>
+    <tr>
+        <th width="200">Fabric Type</th>
+        <th width="200">Theme</th>
+        <th width="200">Pattern</th>
+    </tr>
+    <tr>
+        <td>
+            <% if @edit %>
+                <select name="fabric_type">
+                    <%= options_for_select(@fabrics_edit, @listing.fabric_type.to_i) %>
+                </select>
+            <% else %>
+                <%= form.collection_select  :fabric_type, @fabrics_new, :id, :fabric_type,  :prompt => "Please select", :style => 'width:150px'  %>
+            <% end %>  
+        </td>
+        <td>
+          <% if @edit %>
+            <select name="theme">
+                <%= options_for_select(@themes_edit, @listing.theme.to_i) %>
+            </select>
+            <% else %>
+                
+                <%= form.collection_select  :theme, @themes, :id, :name,  :prompt => "Please select", :style => 'width:100%' %>
+            <% end %>
+        </td>
+        <td>
+            <% if @edit %>
+                 <select name="pattern">
+                    <%= options_for_select(@patterns_edit, @listing.pattern.to_i) %>
+                </select>
+            <% else %>
+                <%= form.collection_select   :pattern, @patterns, :id, :pattern_type,  :prompt => "Please select", :style => 'width:100%' %>
+            <% end %>
+        </td>
+    </tr>
+</table>
+</center>
+
+
+<fieldset>
+    <legend>Yardage Details</legend>
+    <p>
+        <label class="desc" for="length">Length (Yards) </label>
+        <%= form.text_field :length, :size=>15, :class=>'txt' %>
+    </p>
+    <p>
+        <label class="desc" for="width">Width (Inches)</label>
+        <%= form.text_field :width, :size=>15, :class=>'txt' %>
+    </p>
+    <p>
+        <label class="desc" for="cost_per_yard">Cost Per Yard</label>
+        <%= form.text_field :cost_per_yard, :size=>15, :class=>'txt' %>
+    </p>
+    <p>
+        <label class="desc" for="treated">Pre-treated?</label>
+        <% if @edit %>
+            <select name="treated">
+                <%= options_for_select([['yes',1],['no',0]],
+                    (@listing.treated ? 1 : 0) ) %>
+            </select>
+        <% else %>
+            <%= form.select :treated, %w{yes no}, :class=>'txt' %> 
+        <% end %>
+     </p>
+     <p>
+        <label class="desc" for="treatment_method">Treatment Used</label>
+        <%= form.text_field :treatment_method, :size=>15, :class=>'txt' %>
+    </p>
+    <p>
+        <label class="desc" for="manufacturer">Manufacturer</label>
+        <%= form.text_field :manufacturer, :size => 15, :class=>'txt' %><br/>
+    </p>
+    <p>
+        <label class="desc" for="fabric_line_name">Fabric Line</label>
+        <%= form.text_field :fabric_line_name, :size=>15, :class=>'txt' %> <br/>
+    </p>
+    <p>
+        <label class="desc" for="fabric_designer">Fabric Designer</label>
+        <%= form.text_field :fabric_designer, :size => 15, :class=>'txt' %> <br/>
+    </p>
+</fieldset>

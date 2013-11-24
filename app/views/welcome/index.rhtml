@@ -1,0 +1,22 @@
+
+
+<% @title = 'Welcome!' %>
+
+<div id="left">
+
+	<h2>Here are some of the things you can do</h2>
+	<ul>
+		<li><% if logged_in? %>
+				<%= link_to 'Logout', :controller => :users, :action => :logout %>
+			<% else %>
+				<%= link_to 'Login', :controller => :users, :action => :login %>
+			<% end %>
+		</li>
+		
+		<li><%= link_to 'View and accept your pending exchanges', :controller => :exchanges %></li>
+		<li><%= link_to 'Your listings - view, add, edit or delete', :controller => :listings, :action=> :index%></li>
+		<li><%= link_to 'Browse listings', :controller => :listings, :action => :browse %></li>
+		<li><%= link_to 'User info', :controller => :users, :action => :edit %></li>
+	</ul>
+	
+</div>

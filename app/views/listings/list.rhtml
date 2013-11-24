@@ -1,0 +1,27 @@
+
+
+<% @title = @header_type %>
+
+<table>
+	<%= render(:partial => 'header') %>
+	
+	<% if !@listings ||  @listings.size == 0 %>
+		<tr>
+			<td colspan="7"> You haven't created any listings yet. </td>
+		</tr>
+		<% else %>
+
+			<%= render(:partial => "listing",:collection => @listings) %>
+	<% end %>
+    
+    
+</table>
+
+<h2>Add a New Listing</h2>
+<%= link_to 'New Yardage', :action => 'new', :id => 1 %> <br/>
+<%= link_to 'New Block', :action => 'new', :id => 2 %> <br/>
+<%= link_to 'New Kit', :action => 'new', :id => 3 %> <br/>
+<%= link_to 'New Magazine', :action => 'new', :id => 4 %> <br/>
+<%= link_to 'New Quilt Top', :action => 'new', :id => 5 %> <br/>
+
+  

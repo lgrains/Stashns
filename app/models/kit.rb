@@ -1,0 +1,3 @@
+class Kit < Listing
+	
+end

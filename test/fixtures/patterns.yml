@@ -1,0 +1,25 @@
+--- 
+patterns_001: 
+  id: "32"
+  pattern_type: floral
+patterns_002: 
+  id: "33"
+  pattern_type: geometric
+patterns_003: 
+  id: "34"
+  pattern_type: marble
+patterns_004: 
+  id: "35"
+  pattern_type: batik
+patterns_005: 
+  id: "36"
+  pattern_type: gingham
+patterns_006: 
+  id: "37"
+  pattern_type: checked
+patterns_007: 
+  id: "38"
+  pattern_type: print
+patterns_008: 
+  id: "39"
+  pattern_type: solid

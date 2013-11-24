@@ -1,0 +1,16 @@
+<!--- _m_view.rhtml - partial for viewing a magazine -->
+
+<fieldset>
+    <legend>Magazine Details</legend>
+    <p>
+        <label class="desc" for="magazine_name">Magazine Name: </label>
+        <%= h @listing.magazine_name %><br/>
+    </p>
+    <% if @listing.magazine_issue %>
+    <p>
+        <label class="desc" >Magazine Issue: </label>
+        <%= @listing.magazine_issue.strftime("%b %Y") %><br/>
+    </p>
+    <% end %>
+    
+</fieldset>

@@ -1,0 +1,199 @@
+--- 
+exchanges_010: 
+  created_on: 2008-01-11 17:50:28
+  status: complete
+  comments: I only need 1 yard, please
+  provider_id: "15"
+  cost: 
+  updated_on: 2008-01-12 11:13:05
+  listing_id: "122"
+  recipient_id: "13"
+  id: "38"
+  funds_xfr: 
+exchanges_011: 
+  created_on: 2008-01-12 11:24:56
+  status: complete
+  comments: I can send this fabric out to you today.
+  provider_id: "15"
+  cost: 
+  updated_on: 2008-01-12 13:10:42
+  listing_id: "118"
+  recipient_id: "16"
+  id: "39"
+  funds_xfr: 
+exchanges_012: 
+  created_on: 2008-01-12 16:10:56
+  status: complete
+  comments: Very pretty block!
+  provider_id: "14"
+  cost: 
+  updated_on: 2008-01-12 16:13:31
+  listing_id: "110"
+  recipient_id: "16"
+  id: "40"
+  funds_xfr: 
+exchanges_001: 
+  created_on: 2008-01-02 14:46:30
+  status: complete
+  comments: Looks like I have the same dark green fabric as in the picture.
+  provider_id: "12"
+  cost: "5.00"
+  updated_on: 2008-01-04 15:03:21
+  listing_id: "33"
+  recipient_id: "13"
+  id: "9"
+  funds_xfr: 
+exchanges_013: 
+  created_on: 2008-01-12 16:18:44
+  status: complete
+  comments: I've got a light-yellow with white patterns, but no gold
+  provider_id: "16"
+  cost: 
+  updated_on: 2008-01-16 19:54:51
+  listing_id: "115"
+  recipient_id: "14"
+  id: "41"
+  funds_xfr: 
+exchanges_002: 
+  created_on: 2008-01-04 16:22:23
+  status: complete
+  comments: I have a couple of yards of this fabric that I will send you.
+  provider_id: "12"
+  cost: 
+  updated_on: 2008-01-04 16:24:40
+  listing_id: "16"
+  recipient_id: "15"
+  id: "30"
+  funds_xfr: 
+exchanges_014: 
+  created_on: 2008-01-16 19:53:15
+  status: complete
+  comments: looks great
+  provider_id: "14"
+  cost: 
+  updated_on: 2008-01-16 19:54:11
+  listing_id: "114"
+  recipient_id: "16"
+  id: "42"
+  funds_xfr: 
+exchanges_003: 
+  created_on: 2008-01-10 10:08:28
+  status: complete
+  comments: ""
+  provider_id: "14"
+  cost: 
+  updated_on: 2008-01-11 15:59:30
+  listing_id: "27"
+  recipient_id: "12"
+  id: "31"
+  funds_xfr: 
+exchanges_015: 
+  created_on: 2008-01-18 14:18:08
+  status: complete
+  comments: I'll send it out next week.
+  provider_id: "13"
+  cost: 
+  updated_on: 2008-01-18 14:52:09
+  listing_id: "28"
+  recipient_id: "14"
+  id: "43"
+  funds_xfr: 
+exchanges_004: 
+  created_on: 2008-01-10 10:09:42
+  status: complete
+  comments: test
+  provider_id: "12"
+  cost: 
+  updated_on: 2008-01-10 10:14:41
+  listing_id: "29"
+  recipient_id: "14"
+  id: "32"
+  funds_xfr: 
+exchanges_016: 
+  created_on: 2008-01-18 18:44:37
+  status: complete
+  comments: I love these fabrics - I have some left overs from a child's quilt I made for my grandson
+  provider_id: "16"
+  cost: 
+  updated_on: 2008-01-18 18:46:09
+  listing_id: "108"
+  recipient_id: "13"
+  id: "44"
+  funds_xfr: 
+exchanges_005: 
+  created_on: 2008-01-10 10:26:52
+  status: complete
+  comments: I have it!    Only 30.00 USD
+  provider_id: "14"
+  cost: 
+  updated_on: 2008-01-12 12:52:33
+  listing_id: "3"
+  recipient_id: "13"
+  id: "33"
+  funds_xfr: 
+exchanges_017: 
+  created_on: 2008-01-19 17:34:57
+  status: complete
+  comments: Just what I've been looking for!
+  provider_id: "13"
+  cost: "8.00"
+  updated_on: 2008-01-19 17:43:58
+  listing_id: "31"
+  recipient_id: "14"
+  id: "45"
+  funds_xfr: "1"
+exchanges_006: 
+  created_on: 2008-01-10 10:28:43
+  status: complete
+  comments: Hi Barb,   Love this block.  What is the size?
+  provider_id: "12"
+  cost: 
+  updated_on: 2008-01-10 12:18:46
+  listing_id: "32"
+  recipient_id: "15"
+  id: "34"
+  funds_xfr: 
+exchanges_018: 
+  created_on: 2008-01-19 18:13:59
+  status: complete
+  comments: I've been looking all over for this kit!
+  provider_id: "14"
+  cost: "34.95"
+  updated_on: 2008-01-19 18:26:53
+  listing_id: "113"
+  recipient_id: "16"
+  id: "46"
+  funds_xfr: "0"
+exchanges_007: 
+  created_on: 2008-01-11 10:42:39
+  status: complete
+  comments: ""
+  provider_id: "12"
+  cost: 
+  updated_on: 2008-01-11 16:03:24
+  listing_id: "25"
+  recipient_id: "15"
+  id: "35"
+  funds_xfr: 
+exchanges_008: 
+  created_on: 2008-01-11 16:04:53
+  status: complete
+  comments: Very nice work, good points on your triangles!
+  provider_id: "14"
+  cost: 
+  updated_on: 2008-01-11 16:06:22
+  listing_id: "109"
+  recipient_id: "15"
+  id: "36"
+  funds_xfr: 
+exchanges_009: 
+  created_on: 2008-01-11 17:49:39
+  status: complete
+  comments: I have a couple of 1/2 yard pieces - will that do?
+  provider_id: "16"
+  cost: 
+  updated_on: 2008-01-12 07:23:10
+  listing_id: "119"
+  recipient_id: "12"
+  id: "37"
+  funds_xfr: 

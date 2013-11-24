@@ -1,0 +1,16 @@
+<!--- ExchangeMailer#complete -->
+<h1> Exchange Completed</h1>
+
+<p>Dear <%= @owner.first_name %>:</p>
+ 
+<p>Your Stash-n-Share.com exchange with <%= "#{@filler.first_name} #{@filler.last_name} (#{@filler.email} )" %>
+has been completed.  </p>
+
+<p>Fabrics should be mailed to:<br/>
+
+<%= render(:partial => "shared/plain_address", :object => @filler) %></p>
+
+<p>Please log in to Stash-n-Share.com and go to Exchanges to rate this transaction.</p>
+
+Thanks,<br/>
+Louise @ Stash-n-Share.com

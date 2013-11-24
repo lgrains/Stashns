@@ -1,0 +1,23 @@
+
+
+
+   
+<div id="rating">
+    <h5>Rate this provider</h5><br/>
+    <ul>
+        <li><a href="#" onclick="new Ajax.Updater('ajaxWrapper', '/exchanges/ratings/<%= spool.id %>.1',
+            {asynchronous:true, evalScripts: true })", title="1 spool out of 5"><img src="../images/pink_spool.jpg" class="spools"></a></li>
+        <li><a href="#" onclick="new Ajax.Updater('ajaxWrapper','/exchanges/ratings/<%= spool.id %>.2',
+            {asynchronous:true, evalScripts: true })", title="2 spools out of 5""><img src="../images/pink_spool.jpg" class="spools"></a></li>
+        <li><a href="#" onclick="new Ajax.Updater('ajaxWrapper','/exchanges/ratings/<%= spool.id %>.3',
+            {asynchronous:true, evalScripts: true })", title="3 spools out of 5"><img src="../images/pink_spool.jpg" class="spools"></a></li>
+        <li><a href="#" onclick="new Ajax.Updater('ajaxWrapper','/exchanges/ratings/<%= spool.id %>.4',
+            {asynchronous:true, evalScripts: true })", title="4 spools out of 5"><img src="../images/pink_spool.jpg" class="spools"></a></li>
+        <li><a href="#" onclick="new Ajax.Updater('ajaxWrapper','/exchanges/ratings/<%= spool.id %>.5',
+            {asynchronous:true, evalScripts: true })", title="5 spools out of 5"><img src="../images/pink_spool.jpg" class="spools"></a></li>
+    </ul>
+</div>
+
+
+
+

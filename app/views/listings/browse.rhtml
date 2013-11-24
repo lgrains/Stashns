@@ -1,0 +1,31 @@
+<!--- modified to use the paginating_find plugin.  
+    the links is paginating_links(@listings) instead of 
+    pagination_links(@listing_pages) (the old built in paginator
+    is being deprecated for Rails 2.0 and this is 
+    easier anyway.
+-->
+
+<% @title = @header_type %>
+
+<%= error_messages_for :image %>
+
+<table>
+	<%= render(:partial => 'header_browse') %>
+	
+	<% if !@listings ||  @listings.size == 0 %>
+		<tr>
+			<td colspan="7"> There are no open listings today. </td>
+		</tr>
+		<% else %>
+
+			<%= render(:partial => "browse_listing") %>
+	<% end %>
+        
+    
+</table>
+
+	<p>
+		
+	    <%= paginating_links(@listings ) %>
+		
+	</p>

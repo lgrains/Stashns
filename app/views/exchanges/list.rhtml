@@ -1,0 +1,75 @@
+<!--- list all exchanges in order of status: open first, then closed -->
+<% @title = @header_type %>
+
+<h1>Your Pending Exchanges</h1>
+<table>
+    <%= render(:partial => 'open_header') %>
+    <% if !@open_exchanges || @open_exchanges.size == 0 %>
+        <tr>
+			<td colspan="6"> You have no open exchanges. </td>
+		</tr>
+      
+    <% else %>
+        <% index = 0 %>
+        <!--- @open_exchanges --->
+        <% for oe in @open_exchanges %>
+            <% index += 1 %> 
+         
+            <tr>
+                <td><%= h oe.created_on.strftime("%m/%d/%Y") %></td>
+                <td><%= render(:partial => "picture", :object => Listing.find(oe.listing_id),
+                        :locals => {:dim => 80})%></td>
+                <td><%= h User.find(oe.provider_id).email %></td>
+                <td><%= h User.find(oe.recipient_id).email %>   <br/>
+                    <%= render(:partial => "shared/address", :object => User.find(oe.recipient_id)) %>
+                   <!---
+                   <%= h User.find(oe.recipient_id).first_name %> <%= h User.find(oe.recipient_id).last_name %><br/>
+                    <%= h User.find(oe.recipient_id).address1 %><br/>
+                    <% if User.find(oe.recipient_id).address2 && User.find(oe.recipient_id).address2.size > 0 %>
+                        <%= h User.find(oe.recipient_id).address1 %><br/>
+                    <% end %>
+                    <%= h User.find(oe.recipient_id).city %>, <%= h User.find(oe.recipient_id).state %> <%= h User.find(oe.recipient_id).postal_code %>
+                  -->
+                 </td>
+                
+                <td><%= link_to 'View', :action => 'view', :id => oe %> </td>
+            <tr>
+        <% end %>
+    <% end %>
+</table>
+
+<h1>Completed Exchanges</h1>
+ <table>
+    <%= render(:partial => 'closed_header') %>
+    <% if !@closed_exchanges || @closed_exchanges.size == 0 %>
+        <tr>
+			<td colspan="6"> You have no closed exchanges. </td>
+		</tr>
+    <% else %>
+        <% for oe in @closed_exchanges %>
+            <tr>
+                <td><%= h oe.created_on.strftime("%m/%d/%Y") %></td>
+                <td><%= h User.find(oe.provider_id).email %></td>
+                <td><%= h User.find(oe.recipient_id).email %></td>
+                <% if @user == User.find(oe.recipient_id) %>
+                <td> 
+                    <% if !oe.rating %> <!-- oe hasn't been rated yet -->
+                        <div id='ajaxWrapper'>
+                            <%= render(:partial => "spool", :object => oe) %>
+                        </div>
+                    <% else %>
+                        <!--- exchange has been rated, show number of spools for rating -->
+                            <%= render :partial => "shared/spool_display", :locals => {:num => oe.rating} %>  
+                        <% end %>                    
+                    <% else %>  <!-- the user is the provider for this exchange -->
+                        <% if !oe.rating %>
+                            <td>No Rating Yet</td>
+                        <% else %>
+                           <td> <%= render :partial => "shared/spool_display", :locals => {:num => oe.rating} %>   </td>
+                        <% end %>                
+                    <% end %> 
+                </td>
+            <tr>
+        <% end %>
+     <% end %>
+    </table>

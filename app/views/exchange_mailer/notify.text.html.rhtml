@@ -1,0 +1,13 @@
+<!--- ExchangeMailer#notify -->
+<h1> Exchange Notification</h1>
+
+<p>Dear <%= @owner.first_name %>:</p>
+ 
+<p>Your Stash-n-Share.com <%= @listing_type %> has been accepted by 
+<%= "#{@filler.first_name} #{@filler.last_name} (#{@filler.email} )" %></p>
+
+<p>Please log in to Stash-n-share.com and go to Exchanges
+to complete the exchange.</p>
+
+Thanks,<br/>
+Louise @ stash-n-share.com

@@ -1,0 +1,23 @@
+<%= error_messages_for(:listing_image) %>
+
+	<tr>
+        <td width="10%">
+            <% if listing.image_url %>
+                <%= image_tag(listing.image_url, :size => "80x80") %>
+            <% elsif findImageID(listing) > 0 %>
+                <img src="<%= url_for(:action => 'listing_image', :id => findImageID(listing)) %>",
+                    width="80", height="80" />
+            <% else %>
+                <img src="nopix.jpg" width="80" height="80">
+            <% end %>
+        </td>
+		<td width="20%"><%= h(listing.description) %></td>
+         <td width="20%"><%= h(listing.listing_type) %></td>
+		<td width="20%"><%= h(listing.type) %></td>
+    
+        <td width="20%">
+            <%= link_to 'Edit', :action => 'edit', :id => listing %> <br/>
+            <%= link_to 'Remove', { :action => 'remove', :id => listing }, 
+                    :confirm => "Are you sure?", :method => :post %>
+        </td>
+	</tr>
